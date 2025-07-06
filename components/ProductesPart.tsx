@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ProductsArr } from '../constant/items'
+import { productsArr } from '../constant/items'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -11,9 +11,9 @@ export const ProductsPart = () => {
 	const handleChangeFilter = (e) => {
 		const gender = e.target.textContent.toLowerCase()
 		if (gender === 'բոլորը') {
-			setFiltered(ProductsArr)
+			setFiltered(productsArr)
 		} else {
-			const newArr = ProductsArr.filter((el) =>
+			const newArr = productsArr.filter((el) =>
 				el.info.gender.toLowerCase().includes(gender)
 			)
 			setFiltered(newArr)
@@ -22,7 +22,7 @@ export const ProductsPart = () => {
 
 	const handleChangeSearchFilter = (e) => {
 		if (e.target.value.toLowerCase() === 'all') {
-			setFiltered(ProductsArr)
+			setFiltered(productsArr)
 			return
 		}
 		const newArr = ProductsArr.filter((el) =>
