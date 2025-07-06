@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import logo from '../public/assets/img/logo.png'
 import img1 from '../public/assets/img/products/1.jpg'
 import img1_1 from '../public/assets/img/products/1.1.jpg'
@@ -26,7 +26,7 @@ import img10 from '../public/assets/img/products/10.jpg'
 import img10_1 from '../public/assets/img/products/10.1.jpg'
 import img10_2 from '../public/assets/img/products/10.2.jpg'
 
-export const ProductsArr = [
+export const productsArr = [
 	{
 		id: 1,
 		firmaImg: logo,
